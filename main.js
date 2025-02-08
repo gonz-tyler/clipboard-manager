@@ -50,3 +50,4 @@ ipcMain.on('saveClipboardHistory', (_, history) => {
         }
     }).catch(err => console.log(err));
 });
+

@@ -1,0 +1,58 @@
+/* Light Mode (Default) */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    padding: 20px;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+li:hover {
+    background: lightgray;
+}
+
+/* Proper Dark Mode Styles */
+body.dark-theme {
+    background: #121212;
+    color: #eee;
+}
+
+/* Dark mode heading */
+body.dark-theme h1 {
+    color: #eee;
+}
+
+/* Dark mode links */
+body.dark-theme a {
+    color: #809fff;
+}
+
+/* Dark mode list items */
+body.dark-theme li {
+    background: #1e1e1e;
+    color: #eee;
+}
+
+/* Dark mode hover effect */
+body.dark-theme li:hover {
+    background: #333;
+}

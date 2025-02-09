@@ -1,4 +1,5 @@
 const { app, BrowserWindow, clipboard, ipcMain } = require('electron');
+const path = require('path');
 
 let mainWindow;
 let clipboardHistory = [];
@@ -9,6 +10,7 @@ function createWindow() {
         height: 800,
         frame: false,
         autoHideMenuBar: true,
+        icon: path.join(__dirname, 'assets/icons/flaticon.png'),
         webPreferences: {
             nodeIntegration: true, 
             contextIsolation: false // Needed for IPC communication
